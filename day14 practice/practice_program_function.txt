@@ -1,0 +1,372 @@
+1. Calculate Total Sales
+
+Situation: A company has sales from three different days. Create a function to calculate total sales.
+
+def total_sales(s1, s2, s3):
+    total = s1 + s2 + s3
+    print("Total Sales:", total)
+
+s1 = float(input("Enter Monday sales: "))
+s2 = float(input("Enter Tuesday sales: "))
+s3 = float(input("Enter Wednesday sales: "))
+
+total_sales(s1, s2, s3)
+
+
+
+2. Calculate Average Sales
+
+Situation: An analyst wants to find the average sales for three days.
+
+def average_sales(s1, s2, s3):
+    avg = (s1 + s2 + s3) / 3
+    print("Average Sales:", avg)
+
+s1 = float(input("Enter sales 1: "))
+s2 = float(input("Enter sales 2: "))
+s3 = float(input("Enter sales 3: "))
+
+average_sales(s1, s2, s3)
+
+
+
+3. Find Highest Sales
+
+Situation: A sales analyst wants to identify the highest sales among three days.
+
+def highest_sales(s1, s2, s3):
+    if s1 > s2 and s1 > s3:
+        print("Highest sales:", s1)
+    elif s2 > s1 and s2 > s3:
+        print("Highest sales:", s2)
+    else:
+        print("Highest sales:", s3)
+
+s1 = float(input("Enter sales 1: "))
+s2 = float(input("Enter sales 2: "))
+s3 = float(input("Enter sales 3: "))
+
+highest_sales(s1, s2, s3)
+
+
+4. Sales Performance
+
+Situation: A company wants to classify an employee's sales performance.
+
+def sales_performance(sales):
+    if sales >= 100000:
+        print("Excellent performance")
+    elif sales >= 50000:
+        print("Good performance")
+    elif sales >= 25000:
+        print("Average performance")
+    else:
+        print("Poor performance")
+
+sales = float(input("Enter total sales: "))
+
+sales_performance(sales)
+
+
+
+5. Calculate Profit or Loss
+
+Situation: A data analyst needs to determine whether a business transaction resulted in profit or loss.
+
+def profit_loss(cost_price, selling_price):
+    if selling_price > cost_price:
+        profit = selling_price - cost_price
+        print("Profit:", profit)
+    elif cost_price > selling_price:
+        loss = cost_price - selling_price
+        print("Loss:", loss)
+    else:
+        print("No profit, no loss")
+
+cost = float(input("Enter cost price: "))
+selling = float(input("Enter selling price: "))
+
+profit_loss(cost, selling)
+
+
+6. Employee Salary Analysis
+
+Situation: HR wants to categorize employees based on their salary.
+
+def salary_category(salary):
+    if salary >= 80000:
+        print("High Salary")
+    elif salary >= 40000:
+        print("Medium Salary")
+    else:
+        print("Low Salary")
+
+salary = float(input("Enter employee salary: "))
+
+salary_category(salary)
+
+
+
+7. Student Performance Analysis
+
+Situation: An analyst wants to categorize students based on their average marks.
+
+def student_performance(avg):
+    if avg >= 75:
+        print("Excellent")
+    elif avg >= 60:
+        print("Good")
+    elif avg >= 40:
+        print("Average")
+    else:
+        print("Poor")
+
+avg = float(input("Enter average marks: "))
+
+student_performance(avg)
+
+
+
+8. Customer Spending Category
+
+Situation: A company wants to classify customers based on their total spending.
+
+def customer_category(amount):
+    if amount >= 100000:
+        print("Premium Customer")
+    elif amount >= 50000:
+        print("Gold Customer")
+    elif amount >= 10000:
+        print("Silver Customer")
+    else:
+        print("Regular Customer")
+
+amount = float(input("Enter customer spending: "))
+
+customer_category(amount)
+
+
+
+9. Calculate Monthly Expense
+
+Situation: A data analyst wants to calculate the total monthly expenses of a person.
+
+def total_expense(rent, food, travel, shopping):
+    total = rent + food + travel + shopping
+    print("Total Monthly Expense:", total)
+
+rent = float(input("Enter rent: "))
+food = float(input("Enter food expense: "))
+travel = float(input("Enter travel expense: "))
+shopping = float(input("Enter shopping expense: "))
+
+total_expense(rent, food, travel, shopping)
+
+
+
+
+10. Expense Category
+
+Situation: A financial analyst wants to categorize a person's monthly expense.
+
+def expense_category(expense):
+    if expense >= 50000:
+        print("Very High Expense")
+    elif expense >= 30000:
+        print("High Expense")
+    elif expense >= 15000:
+        print("Medium Expense")
+    else:
+        print("Low Expense")
+
+expense = float(input("Enter monthly expense: "))
+
+expense_category(expense)
+
+
+
+
+11. Attendance Analysis
+
+Situation: An HR analyst wants to classify an employee based on attendance percentage.
+
+def attendance_status(attendance):
+    if attendance >= 90:
+        print("Excellent Attendance")
+    elif attendance >= 75:
+        print("Good Attendance")
+    elif attendance >= 60:
+        print("Low Attendance")
+    else:
+        print("Very Low Attendance")
+
+attendance = float(input("Enter attendance percentage: "))
+
+attendance_status(attendance)
+
+
+
+
+12. Customer Age Group
+
+Situation: A marketing analyst wants to classify customers into age groups.
+
+def age_group(age):
+    if age < 18:
+        print("Teenager")
+    elif age < 30:
+        print("Young Adult")
+    elif age < 50:
+        print("Adult")
+    else:
+        print("Senior")
+
+age = int(input("Enter customer age: "))
+
+age_group(age)
+
+
+
+
+13. Product Rating Analysis
+
+Situation: A company wants to analyze customer ratings for a product.
+
+def rating_status(rating):
+    if rating >= 4.5:
+        print("Excellent Product")
+    elif rating >= 3.5:
+        print("Good Product")
+    elif rating >= 2.5:
+        print("Average Product")
+    else:
+        print("Poor Product")
+
+rating = float(input("Enter product rating: "))
+
+rating_status(rating)
+
+
+
+
+
+14. Data Quality Check
+
+Situation: A data analyst receives a customer age value and wants to check whether it is valid.
+
+def check_age(age):
+    if age < 0:
+        print("Invalid age")
+    elif age > 100:
+        print("Suspicious age")
+    else:
+        print("Valid age")
+
+age = int(input("Enter customer age: "))
+
+check_age(age)
+
+
+
+15. Missing Data Check
+
+Situation: An analyst wants to check whether a customer email field contains data.
+
+def check_email(email):
+    if email == "":
+        print("Missing email")
+    else:
+        print("Email available")
+
+email = input("Enter customer email: ")
+
+check_email(email)
+
+
+
+-------------------------------------
+Practice Questions 
+
+
+
+1. Sales Target
+
+Create a function check_target(sales, target) that displays:
+
+"Target Achieved" if sales >= target
+"Target Not Achieved" otherwise
+2. Customer Purchase
+
+Create a function purchase_status(amount):
+
+Below ₹1,000 → "Low Purchase"
+₹1,000–₹5,000 → "Medium Purchase"
+Above ₹5,000 → "High Purchase"
+3. Employee Performance
+
+Create a function employee_performance(score):
+
+90+ → "Excellent"
+75–89 → "Good"
+50–74 → "Average"
+Below 50 → "Poor"
+4. Monthly Sales Growth
+
+Create a function sales_growth(previous_sales, current_sales).
+
+Calculate:
+
+growth = ((current_sales - previous_sales) / previous_sales) * 100
+
+Then display:
+
+Positive growth → "Sales Increased"
+Negative growth → "Sales Decreased"
+Zero → "No Change"
+5. Data Validation
+
+Create a function validate_salary(salary):
+
+Salary below 0 → "Invalid Salary"
+Salary 0 → "Salary Missing"
+Salary above 0 → "Valid Salary"
+6. Product Stock Analysis
+
+Create a function stock_status(stock):
+
+0 → "Out of Stock"
+1–10 → "Low Stock"
+11–50 → "Normal Stock"
+Above 50 → "High Stock"
+7. Customer Churn
+
+Create a function churn_status(status) where:
+
+"Yes" → "Customer Churned"
+"No" → "Customer Active"
+Anything else → "Invalid Status"
+8. Website Traffic
+
+Create a function traffic_status(visitors):
+
+Below 1,000 → "Low Traffic"
+1,000–5,000 → "Medium Traffic"
+5,000–10,000 → "High Traffic"
+Above 10,000 → "Very High Traffic"
+9. Data Analyst KPI
+
+Create a function kpi_status(value):
+
+90 or above → "Excellent KPI"
+70–89 → "Good KPI"
+50–69 → "Average KPI"
+Below 50 → "Poor KPI"
+10. Sales Commission
+
+Create a function calculate_commission(sales):
+
+Sales below ₹50,000 → 5% commission
+₹50,000–₹1,00,000 → 10%
+Above ₹1,00,000 → 15%
+
+Print the commission amount.
