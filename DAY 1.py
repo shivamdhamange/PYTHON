@@ -25,3 +25,8 @@ print(min(ages))
 for i in ages:
     if i>50:
         print(i)
+
+
+for i in ages:
+    if i>50:
+        print(i)
