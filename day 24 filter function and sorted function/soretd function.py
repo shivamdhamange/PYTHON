@@ -50,3 +50,17 @@ words = ['shivam','harshit','sanjay','ssd']
 
 sorted_words = sorted(words, key = lambda x : len(x))
 print(sorted_words)
+
+
+# on length 
+words = ['shivam','harshit','sanjay','ssd']
+
+sorted_words = sorted(words, key = lambda x : len(x),reverse=True)
+print(sorted_words)
+
+
+# sort a dicitionary by specific key
+
+people = [{"name":"shivam","age":23},{"name":"ssd","age":25},{"name":"bob","age":30}]
+sorted_people = sorted(people , key = lambda x: x["age"])
+print(sorted_people)
