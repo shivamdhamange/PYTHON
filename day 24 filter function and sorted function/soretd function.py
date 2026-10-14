@@ -44,3 +44,9 @@ words = ['shivam','harshit','sanjay']
 
 sorted_words = sorted(words,reverse=True)
 print(sorted_words)
+
+# on length 
+words = ['shivam','harshit','sanjay','ssd']
+
+sorted_words = sorted(words, key = lambda x : len(x))
+print(sorted_words)
