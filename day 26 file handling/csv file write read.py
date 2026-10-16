@@ -20,16 +20,30 @@ print("file created successfully")
 
 '''
 
+# append in a csv file
+
+
+'''with open('student.csv','a',newline='') as file:
+    w = csv.writer(file)
+    w.writerow(['Name','Age','Salary'])
+    w.writerows([["hars",24,35000],["danish",22,30000],["sanskar",21,36000]])
+
+'''
 
 # read a csv file
 
 with open('student.csv','r',newline="") as file:
     read = csv.reader(file)
 
-    for r in read:
+    '''for r in read:
         print(r)
+'''
 
-        
     print('Student Details :')
+    next(read)
     for r in read:
         print(f"Name : {r[0]} Age : {r[1]} Salary : {r[2]}")
+
+
+
+    
