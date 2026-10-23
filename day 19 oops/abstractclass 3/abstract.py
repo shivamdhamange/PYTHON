@@ -7,7 +7,7 @@
 from abc import ABC,abstractmethod
 
 class Account(ABC):
-    # creating A ABSTRACT METHOD
+    # Creating A ABSTRACT METHOD
     @abstractmethod
     def deposit(self):
         pass
