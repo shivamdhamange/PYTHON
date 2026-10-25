@@ -30,3 +30,6 @@ for i in ages:
 for i in ages:
     if i>50:
         print(i)
+
+
+import requests
